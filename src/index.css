@@ -1,11 +1,20 @@
 body {
-  /* background-color: #f4f4f4; */
   overflow-x: hidden;
+  background-color: #F4F4F4;
 }
 
 #sidebar {
-  /* background-color: #f4f4f4; */
   overflow-x: hidden;
+}
+
+#login {
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+#checkbox1 {
+  vertical-align: middle;
 }
 
 * {
@@ -38,6 +47,45 @@ body {
   width: 90%;
 }
 
+#recent {
+  position: relative;
+}
+
+#recent::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ff2449;
+  width: 0%;
+  content: "";
+  height: 2px;
+  transition: all 0s;
+}
+
+#recent:hover::after {
+  width: 100%;
+}
+
+/* #category {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #ff2449;
+  height: 3px;
+} */
+
+li.list-group-item {
+  padding: 0;
+}
+
+#profilepicture {
+  background-image: url();
+}
+
 @media only screen and (min-width: 992px) {
   .navbar {
     padding: 0;
@@ -62,22 +110,218 @@ padding-right: 0 !important;
   padding: 0px 15px !important;
 }
 
-.dropdown-menu{
+#drpdown{
   margin-top: 0px !important;
 }
 
-.dropdown-menu ul{
+#drpdown ul{
   list-style: none;
   padding: 0;
 }
 
-.dropdown-menu li a {
+#drpdown li a {
   color : white;
   background-color: transparent;
 }
 
-.dropdown:hover .dropdown-menu{
+.dropdown:hover #drpdown{
   display: flex;
   font-size: 16;
   background-color: #2d2f36;
+}
+
+#bg-awal {
+  background-image: url("//static.itch.io/images/developers/controller.jpg");
+  background-size: cover;
+  background-position: 50% 60%;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.tablist.inactive {
+  height: 0 !important;
+  overflow: hidden;
+  display: flex;
+}
+
+.tablist.active {
+  height: 32px;
+}
+
+#card-devlogs {
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+
+#card-games {
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+}
+
+#yutub-baner {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 20px 30px 0 20px;
+  margin-bottom: 0;
+  box-shadow: 5px 5px 0 #FF2449;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  background: linear-gradient(to right, #0f88e4, rgba(0,0,0,0.6)),url(images/youtube-bg.jpg) 50% 50% no-repeat;
+  background-size: cover;
+}
+
+#view-channel {
+  background-color: white;
+  border-width: 2px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  font-size: 15 !important;
+  margin-left: auto;
+  border: 1px solid;
+  text-shadow: none;
+  padding: 0 10px;
+  height: 35px;
+  color: #FF2449;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+#jam-cover {
+  width: 75px;
+  height: 60px;
+  background-color: #f4f4f4;
+  background-size: cover;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+  border-radius: 2px;
+  position: relative;
+  align-self: flex-start;
+}
+
+#jam-calender {
+  display: block;
+  font-size: 16;
+  overflow: hidden;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+#calender-scrolling {
+  width: 11040px;
+  height: 4713px;
+  cursor: move;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px solid;
+  border-color: #dadada;
+}
+
+#calender-rows {
+  z-index: 2;
+  top: 82px;
+  bottom: 30px;
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
+#calender-row {
+  position: relative;
+  height: 30px;
+  margin: 3px 0;
+}
+
+#jam-jadwal {
+  text-shadow: rgb(59, 186, 120) 1px 1px 1px;
+  opacity: 0.75;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  color: white;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#sticky-label {
+    display: inline-block;
+    position: sticky;
+    left: 0px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#day-markers {
+  z-index: 1;
+  user-select: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#day-marker {
+  font-size: 14;
+  width: 120px;
+  border-left: 0;
+  border-left: 1px solid;
+  box-sizing: border-box;
+  border-color: #dadada;
+  position: absolute;
+  top: 40px;
+  bottom: 0;
+}
+
+#day-ordinal {
+  top: 0;
+  border-bottom: 1px solid;
+  border-color: #dadada;
+  color: #606060;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+#day-name {
+  bottom: 0;
+  border-top: 1px solid;
+  border-color: #dadada;
+  font-size: 13;
+  color: #606060;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+  
+}
+
+#month-marker {
+  box-sizing: border-box;
+  background: #EFEFEF;
+  background-color: #F4F4F4;
+  border-bottom: 1px solid;
+  border-top: 1px solid;
+  color: #434343;
+  font-size: 14;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 40px;
+  line-height: 40px;
 }
