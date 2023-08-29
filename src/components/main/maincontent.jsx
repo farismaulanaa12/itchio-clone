@@ -55,7 +55,7 @@ function SectionGameJam(props)
     <div className='mx-auto' style={{ margin: '40px 40px 0 40px', padding: '0px 40px'}}>
       <div className='d-flex align-item-center' style={{gap: 20}}>
         <h2 className='' style={{fontSize: 20, fontWeight: 'bold'}}>{props.title}</h2>
-        <a href="/jams" className='btn btn-outline-danger rounded-1' style={{height: 28, lineHeight: 1,color: '#FF2449', textDecorationLine: 'none', fontSize: '14px', display: 'inline-block', fontWeight: 'bold', backgroundColor: 'transparent'}}>{props.buttonText}</a>
+        <a href="/jams" className='' style={{border: '1px solid rgba(255,36,73,0.4)', padding:'0 10px', borderRadius:'3px',  height: '28px', lineHeight: '28px' ,color: '#FF2449', textDecorationLine: 'none', fontSize: 16, boxSizing: "border-box", fontWeight: 'bold', backgroundColor: 'transparent', display: `${props.display}`}}>{props.buttonText} <i style={{fontWeight: 'bold'}} className="bi bi-arrow-right" ></i></a>
       </div>
       <p>{props.desc}</p>
       <div className="row mt-3">
@@ -77,7 +77,7 @@ function Section(props)
     <div className='mx-auto' style={{ margin: '40px 40px 0 40px', padding: '0px 40px'}}>
       <div className='d-flex align-item-center' style={{gap: 20}}>
         <h2 className='' style={{fontSize: 20, fontWeight: 'bold'}}>{props.title}</h2>
-        <a href="/games" className='btn btn-outline-danger' style={{height: 28, lineHeight: 1,color: '#FF2449', textDecorationLine: 'none', fontSize: '14px', display: 'inline-block', fontWeight: 'bold', backgroundColor: 'transparent'}}>{props.buttonText}</a>
+        <a href="/games" className='' style={{border: '1px solid rgba(255,36,73,0.4)', padding:'0 10px', borderRadius:'3px',  height: '28px', lineHeight: '28px' ,color: '#FF2449', textDecorationLine: 'none', fontSize: 16, boxSizing: "border-box", fontWeight: 'bold', backgroundColor: 'transparent', display: `${props.display}`}}>{props.buttonText} <i style={{fontWeight: 'bold'}} className="bi bi-arrow-right" ></i></a>
       </div>
       <p>{props.desc}</p>
       <div className="row mt-3">
@@ -98,7 +98,8 @@ function  MainContent()
   return(
     <>
       <Section title="Latest Featured Games"
-      buttonText = "View all -->"
+      display = 'inline-block'
+      buttonText = "View all"
       data={[
         {
           title : "Sushi For Robots",
@@ -209,7 +210,8 @@ function  MainContent()
       ]}
       />
       <Section title="Fresh Games"
-      buttonText="View more -->"
+      display = 'inline-block'
+      buttonText="View more"
       desc = "Constantly updating with the latest games on itch.io"
       data={[
         {
@@ -323,7 +325,8 @@ function  MainContent()
       ]}
       />
       <SectionGameJam title="Featured jams"
-      buttonText="View all jams -->"
+      display = 'inline-block'
+      buttonText="View all jams"
       data={[
         {
           title : "Game Off 2023",
@@ -398,6 +401,7 @@ function  MainContent()
       ]}
       />
       <Section title="More Featured Games"
+      display = 'none'
       data={[
         {
           title : "LCD, Please",

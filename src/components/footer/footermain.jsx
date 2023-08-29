@@ -7,7 +7,7 @@ function FooterSocial(props)
 
   return ( 
     <div className="d-flex justify-content-center align-items-center" style={{}}>
-      <a onMouseOver = { () => {setToggle(true)} } onMouseOut = { () => {setToggle(false)} } href="" style={{fontSize: 15, color: toggle ? "black" : '#858585' , padding: '0 15px'}} className=''>
+      <a onMouseOver = { () => {setToggle(true)} } onMouseOut = { () => {setToggle(false)} } href={props.navigate} style={{fontSize: 15, color: toggle ? "black" : '#858585' , padding: '0 15px'}} className=''>
         <i style={{fontSize: 20}} className={props.icon}></i>
       </a>
     </div>
@@ -35,8 +35,8 @@ function FooterMain()
     <div className='' style={{margin : '', padding: '20px 20px 50px 20px', textShadow: 'none', fontSize: 14, backgroundColor: '#f4f4f4'}}>
       <div className="" style={{textShadow: 'none', fontSize: 14, display: 'block'}}>
         <div className='d-flex justify-content-center align-items-center' id='footer-atas'>
-            <FooterSocial icon="bi bi-twitter"/>
-            <FooterSocial icon="bi bi-facebook"/>
+            <FooterSocial icon="bi bi-twitter" navigate="https://twitter.com/itchio"/>
+            <FooterSocial icon="bi bi-facebook" navigate="https://www.facebook.com/itchiogames"/>
             <FooterMenu text="ABOUT"/>
             <FooterMenu text="FAQ"/>
             <FooterMenu text="BLOG"/>

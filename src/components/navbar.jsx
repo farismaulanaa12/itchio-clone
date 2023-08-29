@@ -19,39 +19,39 @@ function NavigationBar()
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav me-anpmuto mb-2 mb-lg-0">
                 <li className="nav-item dropdown">
-                  <a className="nav-link" aria-expanded="false" aria-haspopup="true" href='/games' data-bs-toggle="dropdown">Browse Games</a>
+                  <a className="nav-link" aria-expanded="false" aria-haspopup="true" href='/games'>Browse Games</a>
                   <div className="dropdown-menu rounded-0" aria-labelledby="navbarDropdown" id='drpdown'>
-                    <ul>
-                      <li><a className="dropdown-item" href="#">Indie game store</a></li>
+                    <ul className="">  
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Indie game store</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Free games</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Free games</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Horror games</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Horror games</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Game development</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Game development</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Assets</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Assets</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Comics</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Comics</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Sales</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Sales</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Bundles</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Bundles</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Jobs</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Jobs</a></li>
                     </ul>
                     <ul>
-                      <li><a className="dropdown-item" href="#">Tags</a></li>
+                      <li className='nav-item'><a className="dropdown-item" href="/games">Tags</a></li>
                     </ul>
                   </div>
                 </li>

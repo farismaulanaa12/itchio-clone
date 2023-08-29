@@ -71,7 +71,7 @@ function TopMenuSideBar(props)
     <div className='' style={{padding: '20px 0px 20px 7px'}}>
       <div className="row">
         <div className="">
-          <h2 style={{fontWeight: 'bold', color: "#434343", fontSize: '16px', fontWeight: 900}} className=''>{props.title}</h2>
+          <h2 style={{fontWeight: 'bold', color: "#434343", fontSize: '16px'}} className=''>{props.title}</h2>
         </div>
           {
             props.data?.map((item, key) => {
